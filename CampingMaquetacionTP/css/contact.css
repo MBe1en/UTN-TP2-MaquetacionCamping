@@ -1,0 +1,144 @@
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 15px;   
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.labels{
+    width: 32%;
+    margin: 5px 0;  
+    padding: 2px;  
+}
+
+.inputs{
+    width: 66%;
+    margin: 5px 0;
+    padding: 2px; 
+    border: 1px solid rgba(38,93,48,0.7); 
+    border-radius: 2px;
+    accent-color:  rgba(38,93,48,1);
+}
+
+.radioBtn {
+    width: 66%;
+    margin: 5px 0;  
+    padding: 2px;  
+    border: 1px solid rgba(38,93,48,0.7); 
+}
+
+.radioBtn input {
+    margin: 5px;
+    accent-color:  rgba(38,93,48,1);
+}
+
+#buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.btn {
+	box-shadow: 0px 2px 0px 0px #9acc85;
+	background:linear-gradient(to bottom, #6c9956 5%, #496b39 100%);
+	background-color:#6c9956;
+	border-radius:6px;
+	border:1px solid #3b6e22;
+	display:inline-block;
+	cursor:pointer;
+	color: whitesmoke !important;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:7px 17px;
+	/* text-decoration:none; */
+    margin: 10px;
+    width: 100px;
+}
+
+.btn:hover {
+	background:linear-gradient(to bottom, #496b39 5%, #6c9956 100%);
+	background-color:#496b39;
+}
+
+.btn:active {
+	position:relative;  
+	top:1px;
+}
+
+.other-contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul{
+    list-style-type:none;
+    margin-right: 10px;
+}
+
+li{
+    margin: 12px 12px 12px 0;
+}
+
+li i{
+    font-size: 1.5 rem;
+    margin-right: 15px;
+}
+      
+
+@media only screen and (min-width: 760px){
+
+    .contact-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0 20%;
+    }
+}
+
+
+@media only screen and (min-width: 1024px){
+
+    .contact-container{
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100vw;
+        padding: 15px;
+        flex-wrap: nowrap;
+    }
+
+    .contact-form{
+        padding: 0 30px;
+        width: 60%;
+    }
+
+    .other-contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 0px;
+        width: 40%;
+        margin-left: 100px;
+    }
+
+    .other-contacts h4 {
+        margin-left: 25px;
+    }
+
+
+}

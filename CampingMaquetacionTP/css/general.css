@@ -1,0 +1,142 @@
+*{
+    margin: 0; 
+    padding: 0;
+    
+}
+
+.titles{
+    color: #285c30;
+    font-size: 25px; 
+    text-align: center;
+    margin: 10px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+
+/*************** HEADER ***************/
+
+header{
+    width: 100vw;
+}
+
+.logo-container{
+    display: flex;
+    background-color: #1e4725;
+    height: 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    /* margin: 20px; */
+    padding: 10px;
+}
+
+.logo-container img{
+    height: 70%;
+    margin-right: 3%;
+    filter: drop-shadow(0px 0px 9px rgba(179, 233, 187, 0.772));
+}
+
+
+#title-logo{
+    color: white;
+    margin: 5PX 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Gluten', cursive;
+    font-weight: 600;
+}
+
+/*************** BODY ***************/
+
+/* body{
+    background-image: url(../img/cesped1.jpeg)
+} */
+
+.principal-section{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    align-content: space-around;
+}
+
+
+/*************** FOOTER ***************/
+footer {
+    background: #1e4725;
+    width: 100vw;
+    height: 80px;
+    bottom: 0px;
+    position: relative;
+}
+
+footer p {
+    font-size: 16px;
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    font-style: bold;
+    margin: 10px auto;
+    padding-top: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+@media only screen and (min-width: 760px){  
+
+    .logo-container img{
+        height: 80%;
+    }
+
+    #title-logo{
+        font-size: 25px;
+        margin: 0;
+    }
+    
+}
+
+@media only screen and (min-width: 1024px){
+
+    .titles{
+        text-align: left;
+        margin-left: 0px;
+    }
+
+    .logo-container{
+        display: flex;
+        background-color: #1e4725;
+        /* height: 150px; */
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .logo-container img{
+        height: 75%;
+        margin-right: 2%;
+    }
+    
+    #title-logo{
+        font-size: 2em;
+    }
+
+    .principal-section{
+        display: flex;
+        width: 80%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        /* margin: auto; */
+        align-content: space-between;
+    }
+
+}

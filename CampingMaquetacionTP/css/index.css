@@ -1,0 +1,113 @@
+
+.img-container img{
+    width: 100vw;
+}
+
+#imgCamping2{
+    display: none;
+}
+
+#home-container{
+    width: 80%;
+    display: flex;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.welcome p{
+    text-align: justify;
+    /* color: white; */
+}
+
+hr {
+    border: 0;
+    /* margin: 1.35em auto; */
+    margin: 0;
+    max-width: 100%;
+    background-position: 50%;
+    box-sizing: border-box;
+    width: auto;
+  }
+
+.shine {
+    height: 20px;
+    width: 80%;
+    background-image: radial-gradient(farthest-side at 50% -50%,hsla(0, 0%, 0%, 0.7),hsla(0, 0%, 0%, 0));
+    position: relative; 
+}
+
+.location{
+    width: 60%;
+}
+
+.location h2{
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+
+@media only screen and (min-width: 760px){
+
+    #imgCamping1{
+        display: none;
+    }
+
+    #imgCamping2{
+        display: block;
+    }
+
+    .location{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+
+    .img-container{
+        width: 80vw;
+    }
+
+    .img-container img{
+        width: 100%;
+    }
+
+    #home-container{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .welcome{
+        width: 68%;
+        margin: 15px 5px 5px 0px;
+    }
+
+    .welcome p{
+        font-size: 1.1em;
+    }
+
+    hr {
+        border-left: 1px solid hsla(200, 10%, 50%,100);
+        margin: 0;
+        max-height: 100px;
+        background-position: 50%;
+        box-sizing: border-box;
+      }
+    
+    /* .shine {
+        height: 500px;
+        width: 5px;
+        /* background-image: radial-gradient(farthest-side at 50% -50%,hsla(0, 0%, 0%, 0.7),hsla(0, 0%, 0%, 0)); */
+        /* position: relative; 
+    } */ 
+
+    .location{
+        width: 25%;
+        height: 50%;
+        margin-top: 15px;
+    }
+
+} 
